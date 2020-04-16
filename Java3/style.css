@@ -1,0 +1,46 @@
+body {
+    background-color: aquamarine;
+}
+ul {
+    float: right;
+}
+li {
+    display: inline;
+}
+.redIteam {
+    color: darkred;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+label {
+    display: block;
+}
+input {
+    border: none;
+    display: block;
+    border-radius: 15px;
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+}
+#submit {
+    height: 30px;
+    width: 100px;
+    background-color: chartreuse;
+}
+fieldset {
+    border: none;
+    background-color: cadetblue;
+    width: fit-content;
+    border-radius: 10px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
