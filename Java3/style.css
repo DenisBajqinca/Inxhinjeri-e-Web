@@ -13,6 +13,12 @@ li {
 a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+p {
+    font-weight: bold;
+    font-size: 20px;
 }
 label {
     display: block;
@@ -31,6 +37,7 @@ input {
     background-color: chartreuse;
 }
 fieldset {
+    padding-top: 10px;
     border: none;
     background-color: cadetblue;
     width: fit-content;
