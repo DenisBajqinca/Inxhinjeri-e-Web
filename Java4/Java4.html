@@ -9,12 +9,12 @@
             body, html {
                 height: 100%;
                 margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
 
             .hero-image {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
-                height: 65%;
+                background-image: linear-gradient(rgba(50, 4, 255, 0.4), rgba(50, 4, 255, 0.4)), url("61.jpg");
+                height: 70%;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -51,8 +51,127 @@
                 color: white;
                 border-radius: 20px;
             }
-            main{
+
+            .flexbox {
                 text-align: center;
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                margin: 0 auto;
+            }
+
+            .flexbox div{
+                padding: 50px;
+            }
+            .ss{
+                text-align: center;
+            }
+            .bluehr {
+                width: 30px;
+                border: 2px solid blue;
+            }
+
+            .container {
+                text-align: center;
+                background-image: linear-gradient(rgba(50, 4, 255, 0.4), rgba(50, 4, 255, 0.4)), url("13.jpg");
+                height: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            
+            .text {
+                padding: 25px;
+                color: white;
+            }
+
+            .divi{
+                background-color: rgb(243, 243, 243);
+            }
+            .anotherContainer {
+                padding: 40px;
+                display: flex;
+                width: fit-content;
+                height: fit-content;
+                margin: 0 auto;
+            }
+            .foto {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            .foto img{
+                height: 350px;
+                width: 400px;
+            }
+
+            .teksti {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            .teksti button{
+                background-color: blueviolet;
+                color: white;
+                border-radius: 20px;
+                border: none;
+                outline: 0;
+                padding: 10px 25px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .ExecutiveTeam{
+                text-align: center;
+            }
+
+            .howWeWork{
+                color: blue;
+            }
+
+            #fotoja{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+            }
+
+            .footer {
+                text-align: center;
+                background-image: linear-gradient(rgba(50, 4, 255, 0.4), rgba(50, 4, 255, 0.4)), url("78.jpg");
+                height: 87%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+
+            .growth img{
+                width: 500px; 
+                height: 150px;
+                padding-top: 50px;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 10px;
+            }
+            .grid-item {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .footer .flexbox div{
+                padding: 30px;
+            }
+            .inline{
+                display: inline;
+                vertical-align: middle;
+            }
+            
+            .grid-item h4{
+                color: white;
             }
         </style>
     </head>
@@ -63,21 +182,196 @@
                 <h1><b>Better Solution At <br> Your Fingertips</b></h1>
                 <button id="button1">Contact Us</button>
                 <button id=button2>Learn More</button>
-            </div>
+            </div> 
         </header>
 
         <main>
-            <h3>Smart Solution For Your Business</h3>
-            <img src="like.png" alt="">
-            <img src="group.png" alt="">
-            <img src="upload.png" alt="">
+            <h3 class="ss">Smart Solution For Your Business</h3>
+            <hr class="bluehr">
+            <div class="flexbox">
+                <div id="01" class="box1">
+                    <img src="like.png" alt="">
+                    <p><b>Market Research</b></p>
+                    <p>
+                        Systematic gathering and <br>
+                        interpretation of information about <br> 
+                        individuals or organizations
+                    </p>
+                </div>
+    
+                <div id="02" class="box2">
+                    <img src="group.png" alt="">
+                    <p><b>Strategic Consulting</b></p>
+                    <p>
+                        A strategy consultant is primarly <br>
+                        geared towards providing unbiased <br> 
+                        strategic advice to company's board
+                    </p>
+                </div>
+    
+                <div id="03" class="box3">
+                    <img src="upload.png" alt="">
+                    <p><b>Sales Services</b></p>
+                    <p>
+                        Sales Management Services helps <br>
+                        clients improve theis sales <br>
+                        organization's effectiveness
+                    </p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="text">
+                <img src="play.png" alt="">
+                <h3>WE ALWAYS STAY WITH OUR CLIENTS AND RESPECT THEIR <br> BUSINESS</h3>
+                </div>
+            </div>
+
+            <div class="flexbox">
+                <div id="01" class="box1">
+                    <img src="clock.png" alt="">
+                    <h2>20</h2>
+                    <p>Years of Experisence</p>
+                </div>
+    
+                <div id="02" class="box2">
+                    <img src="folder.png" alt="">
+                    <h2>>5000</h2>
+                    <p>Successful Projects</p>
+                </div>
+    
+                <div id="03" class="box3">
+                    <img src="hand.png" alt="">
+                    <h2>>500</h2>
+                    <p>Team Members</p>
+                </div>
+                <div id="04" class="box4">
+                    <img src="person.png" alt="">
+                    <h2>10000</h2>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+
+            <div class="divi">
+                <div class="anotherContainer">
+                    <div class="foto">
+                        <img src="940.jpg" alt="">
+                    </div>
+                    <div class="teksti">
+                        <h1>Get Connected and <br> Take Control of Your <br> Business Success</h1>
+                        <ul>
+                            <li>Number of Buyers</li>
+                            <li>Achieve all New Sales</li>
+                            <li>Improve your Business</li>
+                            <li>Business Growth</li>
+                        </ul>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ExecutiveTeam">
+                <h1>ExecutiveTeam</h1>
+                <p class="howWeWork">How we work</p>
+                <hr class="bluehr">
+                <div class="flexbox">
+                    <div id="01" class="box1">
+                        <img src="adrian.jpg" alt="" id="fotoja">
+                        <h4>Adrian Carey</h4>
+                        <p>Designer / Web Developer</p>
+                        <a href="https://www.facebook.com/"><img src="fb.png" alt=""></a>
+                        <a href="https://www.twitter.com/"><img src="twitter.png" alt=""></a>
+                        <a href="https://www.google.com/"><img src="googleplus.png" alt=""></a>
+                    </div>
+        
+                    <div id="02" class="box2">
+                        <img src="susan.jpg" alt="" id="fotoja">
+                        <h4>Susan Crossman</h4>
+                        <p>Sales / Marketing Manager</p>
+                        <a href="https://www.facebook.com/"><img src="fb.png" alt=""></a>
+                        <a href="https://www.twitter.com/"><img src="twitter.png" alt=""></a>
+                        <a href="https://www.google.com/"><img src="googleplus.png" alt=""></a>
+                    </div>
+        
+                    <div id="03" class="box3">
+                        <img src="stephen.jpg" alt="" id="fotoja">
+                        <h4>Stephen Jenkin</h4>
+                        <p>CO-Founder / Designer</p>
+                        <a href="https://www.facebook.com/"><img src="fb.png" alt=""></a>
+                        <a href="https://www.twitter.com/"><img src="twitter.png" alt=""></a>
+                        <a href="https://www.google.com/"><img src="googleplus.png" alt=""></a>
+                    </div>
+
+                    <div id="04" class="box4">
+                        <img src="jennifer.jpg" alt="" id="fotoja">
+                        <h4>Jennifer Bawerman</h4>
+                        <p>Designer / Project Manager</p>
+                        <a href="https://www.facebook.com/"><img src="fb.png" alt=""></a>
+                        <a href="https://www.twitter.com/"><img src="twitter.png" alt=""></a>
+                        <a href="https://www.google.com/"><img src="googleplus.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </main>
 
-        <footer>
-            <p>
-                &copy; <br>
-                <a href="https://github.com/DenisBajqinca/Inxhinjeri-e-Web/">UBT - Prill 2020</a>
-            </p>
+        <footer class="footer">
+            <div class="flexbox">
+                <div class="growth">
+                    <h1>Our Growth Rate Of <br> Last 10 Years</h1>
+                    <img src="progressbar.png" alt="">
+                </div>
+    
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="square.png" alt="" class="inline">
+                        <h4 class="inline">Number of Buyers</h4>
+                        <hr class="whitehr">
+                        <p>
+                            Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit. <br>
+                            Curabitur et tortor magna. <br> 
+                            Vestibulum eget sem quis ante volutpat <br> 
+                            interdum. Sed ultricies urna.
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="square.png" alt="" class="inline">
+                        <h4 class="inline">Achieve all New Sales</h4>
+                        <hr class="whitehr">
+                        <p>
+                            Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit. <br>
+                            Curabitur et tortor magna. <br> 
+                            Vestibulum eget sem quis ante volutpat <br> 
+                            interdum. Sed ultricies urna.
+                        </p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="square.png" alt="" class="inline">
+                        <h4 class="inline">Improve your Business</h4>
+                        <hr class="whitehr">
+                        <p>
+                            Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit. <br>
+                            Curabitur et tortor magna. <br> 
+                            Vestibulum eget sem quis ante volutpat <br> 
+                            interdum. Sed ultricies urna.
+                        </p>
+                    </div>  
+                    <div class="grid-item">
+                        <img src="square.png" alt="" class="inline">
+                        <h4 class="inline">Business Growth</h4>
+                        <hr class="whitehr">
+                        <p>
+                            Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit. <br>
+                            Curabitur et tortor magna. <br> 
+                            Vestibulum eget sem quis ante volutpat <br> 
+                            interdum. Sed ultricies urna.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
