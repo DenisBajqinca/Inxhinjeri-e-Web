@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Java 3
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function buttonmouseover(x) {
+                x.style.height = "55px";
+                x.style.width = "110px";
+            }
+            function buttonmouseout(x) {
+                x.style.height = "45px";
+                x.style.width = "90px"; 
+            }
+
+            function myFunction() {
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    y.style.display = "none";
+                } else {
+                    x.style.display = "none";
+                    y.style.display = "block";
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <header>
+            <img src="UBT-LOGO.png" alt="UBT-LOGO" height="100px"; width="100px">
+            <button onmouseover="buttonmouseover(this)" onmouseout="buttonmouseout(this)"> 
+                Contact
+            </button>
+            <button onmouseover="buttonmouseover(this)" onmouseout="buttonmouseout(this)">
+                About Us
+            </button>
+            <button onmouseover="buttonmouseover(this)" onmouseout="buttonmouseout(this)">
+                Home
+            </button>
+        </header>
+        <main>
+            <center>
+            <fieldset>
+                <h2 onclick="myFunction()">Login</h2>
+                <h2 onclick="myFunction()">Register</h2>
+                <div id="login">
+                    <label for="Username">Username:</label>
+                        <input type="text" name="Username" id="input" placeholder="Username">
+                        <label for="Password">Password:</label>
+                        <input type="password" name="Password" id="input" placeholder="Password">
+                        <br>
+                        <input type="submit" value="Login" id="submit">
+                    </div>
+                    <div id="register" hidden>
+                    <label for="Name">Name:</label>
+                        <input type="text" name="Name" id="input" placeholder="Name">
+                        <label for="Surname">Surname:</label>
+                        <input type="text" name="Surname" id="input" placeholder="Surname">
+                        <label for="Username">Username:</label>
+                        <input type="text" name="Username" id="input" placeholder="Username">
+                        <label for="Email">Email:</label>
+                        <input type="email" name="Email" id="input" placeholder="Email">
+                        <label for="Password">Password:</label>
+                        <input type="password" name="Password" id="input" placeholder="Password">
+                        <br>
+                        <input type="submit" value="Register" id="submit">
+                    </div>
+            </fieldset>  
+            </center>  
+        </main>
+        <footer>
+            <p>
+                &copy; <br>
+                <a href="https://github.com/DenisBajqinca/Inxhinjeri-e-Web/">UBT - Prill 2020</a>
+            </p>
+        </footer>
+    </body>
+</html>
